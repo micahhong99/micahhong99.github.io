@@ -1,61 +1,23 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>GitHub 基本用法</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f0f0f0;
-            color: #333;
-            margin: 0;
-            padding: 20px;
-        }
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            background-color: #fff;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        h1 {
-            color: #0073e6;
-            text-align: center;
-        }
-        h2 {
-            color: #333;
-        }
-        p {
-            font-size: 18px;
-            line-height: 1.6;
-        }
-        code {
-            background-color: #f7f7f7;
-            padding: 2px 4px;
-            border-radius: 4px;
-            font-family: "Courier New", Courier, monospace;
-        }
-        a {
-            color: #0073e6;
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
-        .back-link {
-            text-align: center;
-            margin-top: 20px;
-        }
-    </style>
-</head>
-<body>
-    <div class="container">
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header></header>
+    <main>
+      <div class="container">
         <h1>GitHub 基本用法</h1>
 
         <h2>1. 创建一个新仓库</h2>
-        <p>登录 GitHub 后，点击右上角的 <code>+</code> 号，然后选择 <code>New repository</code>。填写仓库名称和描述，选择公开或私有，点击 <code>Create repository</code> 即可创建一个新的仓库。</p>
+        <p>
+          登录 GitHub 后，点击右上角的 <code>+</code> 号，然后选择
+          <code>New repository</code>。填写仓库名称和描述，选择公开或私有，点击
+          <code>Create repository</code> 即可创建一个新的仓库。
+        </p>
 
         <h2>2. 克隆仓库到本地</h2>
         <p>在命令行中运行以下命令，将远程仓库克隆到本地：</p>
@@ -68,14 +30,20 @@
         <pre><code>git push origin main</code></pre>
 
         <h2>4. 创建 Pull Request</h2>
-        <p>当你完成一个分支的开发后，可以通过创建 Pull Request 来请求合并到主分支。在 GitHub 上打开你的仓库，点击 <code>Pull requests</code>，然后点击 <code>New pull request</code>。</p>
+        <p>
+          当你完成一个分支的开发后，可以通过创建 Pull Request
+          来请求合并到主分支。在 GitHub 上打开你的仓库，点击
+          <code>Pull requests</code>，然后点击 <code>New pull request</code>。
+        </p>
 
         <h2>5. 合并 Pull Request</h2>
-        <p>项目维护者可以查看并合并 Pull Request。如果没有冲突，点击 <code>Merge pull request</code>，然后点击 <code>Confirm merge</code>。</p>
-
-        <div class="back-link">
-            <p><a href="index.html">返回主页</a></p>
-        </div>
-    </div>
-</body>
+        <p>
+          项目维护者可以查看并合并 Pull Request。如果没有冲突，点击
+          <code>Merge pull request</code>，然后点击 <code>Confirm merge</code>。
+        </p>
+      </div>
+    </main>
+    <footer></footer>
+    <script src="script.js"></script>
+  </body>
 </html>
